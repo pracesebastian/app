@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.4
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Czas generowania: 06 Cze 2017, 11:39
+- Wersja serwera: 10.1.18-MariaDB
+- Wersja PHP: 5.6.23
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="raxil22_startmydesign" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="wp_usermeta">
+                CREATE TABLE `wp_usermeta` (
+                  `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+                  `meta_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                  `meta_value` longtext COLLATE utf8mb4_unicode_ci,
+                  PRIMARY KEY (`umeta_id`),
+                  KEY `user_id` (`user_id`),
+                  KEY `meta_key` (`meta_key`(191))
+                ) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Baza danych: 'raxil22_startmydesign'
+    -->
+    <database name="raxil22_startmydesign">
+        <!-- Tabela wp_usermeta -->
+        <table name="wp_usermeta">
+            <column name="umeta_id">1</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">nickname</column>
+            <column name="meta_value">admin</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">2</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">first_name</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">3</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">last_name</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">4</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">description</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">5</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">rich_editing</column>
+            <column name="meta_value">true</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">6</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">comment_shortcuts</column>
+            <column name="meta_value">false</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">7</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">admin_color</column>
+            <column name="meta_value">fresh</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">8</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">use_ssl</column>
+            <column name="meta_value">0</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">9</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">show_admin_bar_front</column>
+            <column name="meta_value">true</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">10</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">locale</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">11</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;b:1;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">12</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">13</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">dismissed_wp_pointers</column>
+            <column name="meta_value"></column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">14</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">show_welcome_panel</column>
+            <column name="meta_value">1</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">15</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">session_tokens</column>
+            <column name="meta_value">a:2:{s:64:&quot;a83ea6b4fc02182211589d2a1299060fd04639afee579f3a0dadae0fd4726285&quot;;a:4:{s:10:&quot;expiration&quot;;i:1493906419;s:2:&quot;ip&quot;;s:14:&quot;176.109.166.74&quot;;s:2:&quot;ua&quot;;s:115:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36&quot;;s:5:&quot;login&quot;;i:1492696819;}s:64:&quot;56aba8e9fab138edf84e92814e2b6e000103db79e0fc011a92a864b59f942923&quot;;a:4:{s:10:&quot;expiration&quot;;i:1493906427;s:2:&quot;ip&quot;;s:14:&quot;176.109.166.74&quot;;s:2:&quot;ua&quot;;s:115:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36&quot;;s:5:&quot;login&quot;;i:1492696827;}}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">16</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_dashboard_quick_press_last_post_id</column>
+            <column name="meta_value">3</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">17</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_user-settings</column>
+            <column name="meta_value">libraryContent=browse&amp;uploader=1&amp;align=center</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">18</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">wp_user-settings-time</column>
+            <column name="meta_value">1492771156</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">19</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">closedpostboxes_logocarousel</column>
+            <column name="meta_value">a:0:{}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">20</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">metaboxhidden_logocarousel</column>
+            <column name="meta_value">a:1:{i:0;s:7:&quot;slugdiv&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">21</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">closedpostboxes_logo-carousel-free</column>
+            <column name="meta_value">a:1:{i:0;s:20:&quot;wpl_lcf_url_meta_box&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">22</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">metaboxhidden_logo-carousel-free</column>
+            <column name="meta_value">a:1:{i:0;s:7:&quot;slugdiv&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">23</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">closedpostboxes_logo_slider</column>
+            <column name="meta_value">a:1:{i:0;s:20:&quot;wpb-bls-logo-add-pro&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">24</column>
+            <column name="user_id">1</column>
+            <column name="meta_key">metaboxhidden_logo_slider</column>
+            <column name="meta_value">a:1:{i:0;s:7:&quot;slugdiv&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">25</column>
+            <column name="user_id">2</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">26</column>
+            <column name="user_id">2</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">27</column>
+            <column name="user_id">2</column>
+            <column name="meta_key">active</column>
+            <column name="meta_value">1</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">28</column>
+            <column name="user_id">3</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">29</column>
+            <column name="user_id">3</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">30</column>
+            <column name="user_id">3</column>
+            <column name="meta_key">active</column>
+            <column name="meta_value">1</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">31</column>
+            <column name="user_id">4</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">32</column>
+            <column name="user_id">4</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">33</column>
+            <column name="user_id">4</column>
+            <column name="meta_key">active</column>
+            <column name="meta_value">1</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">34</column>
+            <column name="user_id">5</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">35</column>
+            <column name="user_id">5</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">36</column>
+            <column name="user_id">5</column>
+            <column name="meta_key">active</column>
+            <column name="meta_value">1</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">37</column>
+            <column name="user_id">6</column>
+            <column name="meta_key">wp_capabilities</column>
+            <column name="meta_value">a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">38</column>
+            <column name="user_id">6</column>
+            <column name="meta_key">wp_user_level</column>
+            <column name="meta_value">10</column>
+        </table>
+        <table name="wp_usermeta">
+            <column name="umeta_id">39</column>
+            <column name="user_id">6</column>
+            <column name="meta_key">active</column>
+            <column name="meta_value">1</column>
+        </table>
+    </database>
+</pma_xml_export>

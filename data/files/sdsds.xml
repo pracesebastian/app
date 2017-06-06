@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.4
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Czas generowania: 06 Cze 2017, 00:00
+- Wersja serwera: 10.1.18-MariaDB
+- Wersja PHP: 5.6.23
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="raxil22_startmydesign" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="wp_posts">
+                CREATE TABLE `wp_posts` (
+                  `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
+                  `post_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+                  `post_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+                  `post_content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `post_title` text COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `post_excerpt` text COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `post_status` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'publish',
+                  `comment_status` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'open',
+                  `ping_status` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'open',
+                  `post_password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+                  `post_name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+                  `to_ping` text COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `pinged` text COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `post_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+                  `post_modified_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+                  `post_content_filtered` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+                  `post_parent` bigint(20) unsigned NOT NULL DEFAULT '0',
+                  `guid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+                  `menu_order` int(11) NOT NULL DEFAULT '0',
+                  `post_type` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'post',
+                  `post_mime_type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+                  `comment_count` bigint(20) NOT NULL DEFAULT '0',
+                  PRIMARY KEY (`ID`),
+                  KEY `post_name` (`post_name`(191)),
+                  KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
+                  KEY `post_parent` (`post_parent`),
+                  KEY `post_author` (`post_author`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Baza danych: 'raxil22_startmydesign'
+    -->
+    <database name="raxil22_startmydesign">
+        <!-- Tabela wp_posts -->
+        <table name="wp_posts">
+            <column name="ID">1</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-20 16:00:19</column>
+            <column name="post_date_gmt">2017-04-20 14:00:19</column>
+            <column name="post_content">Witaj w WordPressie. To jest twój pierwszy wpis. Zmodyfikuj go lub usuń, a następnie rozpocznij pisanie!</column>
+            <column name="post_title">Witaj, świecie!</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">open</column>
+            <column name="post_password"></column>
+            <column name="post_name">witaj-swiecie</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-20 16:00:19</column>
+            <column name="post_modified_gmt">2017-04-20 14:00:19</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?p=1</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">post</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">1</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">2</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-20 16:00:19</column>
+            <column name="post_date_gmt">2017-04-20 14:00:19</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam piña coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+...lub coś bardziej jak to:
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">strony-internetowe</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 14:08:08</column>
+            <column name="post_modified_gmt">2017-04-22 12:08:08</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?page_id=2</column>
+            <column name="menu_order">2</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">4</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-20 17:56:10</column>
+            <column name="post_date_gmt">2017-04-20 15:56:10</column>
+            <column name="post_content">{
+    &quot;nav_menu[-4600839302868504600]&quot;: {
+        &quot;value&quot;: {
+            &quot;name&quot;: &quot;Main&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;parent&quot;: 0,
+            &quot;auto_add&quot;: false
+        },
+        &quot;type&quot;: &quot;nav_menu&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-2305793593901146000]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 0,
+            &quot;object&quot;: &quot;&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 1,
+            &quot;type&quot;: &quot;custom&quot;,
+            &quot;title&quot;: &quot;Strona g\u0142\u00f3wna&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Strona g\u0142\u00f3wna&quot;,
+            &quot;nav_menu_term_id&quot;: -4600839302868504600,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;W\u0142asny odno\u015bnik&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-3341004125507285000]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 2,
+            &quot;object&quot;: &quot;page&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 2,
+            &quot;type&quot;: &quot;post_type&quot;,
+            &quot;title&quot;: &quot;Przyk\u0142adowa strona&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my/?page_id=2&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Przyk\u0142adowa strona&quot;,
+            &quot;nav_menu_term_id&quot;: -4600839302868504600,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;Strona&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    }
+}</column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">trash</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">ccc04be4-fdb4-4fe1-bdc0-37be3fddce4e</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-20 17:56:10</column>
+            <column name="post_modified_gmt">2017-04-20 15:56:10</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?p=4</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">customize_changeset</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">63</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:22:05</column>
+            <column name="post_date_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content"> </column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">63</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:22:05</column>
+            <column name="post_modified_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/63/</column>
+            <column name="menu_order">2</column>
+            <column name="post_type">nav_menu_item</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">62</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:22:05</column>
+            <column name="post_date_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content"> </column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">62</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:22:05</column>
+            <column name="post_modified_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/62/</column>
+            <column name="menu_order">1</column>
+            <column name="post_type">nav_menu_item</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">53</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:17:41</column>
+            <column name="post_date_gmt">2017-04-21 13:17:41</column>
+            <column name="post_content"></column>
+            <column name="post_title">css</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">css</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:17:41</column>
+            <column name="post_modified_gmt">2017-04-21 13:17:41</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/css.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">8</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 01:09:53</column>
+            <column name="post_date_gmt">2017-04-20 23:09:53</column>
+            <column name="post_content"></column>
+            <column name="post_title">technology</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">technology</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 01:09:53</column>
+            <column name="post_modified_gmt">2017-04-20 23:09:53</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logoshowcase&amp;#038;p=8</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logoshowcase</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">11</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 01:13:08</column>
+            <column name="post_date_gmt">2017-04-20 23:13:08</column>
+            <column name="post_content"></column>
+            <column name="post_title">adi</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">adi</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 12:44:08</column>
+            <column name="post_modified_gmt">2017-04-21 10:44:08</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logocarousel&amp;#038;p=11</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logocarousel</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">52</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:17:20</column>
+            <column name="post_date_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content"></column>
+            <column name="post_title">js</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">js</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:17:20</column>
+            <column name="post_modified_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/js.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">50</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:17:20</column>
+            <column name="post_date_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content"></column>
+            <column name="post_title">fbe01551b3091103d2655e6be9d8cd9f</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">fbe01551b3091103d2655e6be9d8cd9f</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:17:20</column>
+            <column name="post_modified_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/fbe01551b3091103d2655e6be9d8cd9f.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">27</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 12:42:22</column>
+            <column name="post_date_gmt">2017-04-21 10:42:22</column>
+            <column name="post_content"></column>
+            <column name="post_title">lg</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">lg</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 12:42:22</column>
+            <column name="post_modified_gmt">2017-04-21 10:42:22</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logoshowcase&amp;#038;p=27</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logoshowcase</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">31</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 12:48:59</column>
+            <column name="post_date_gmt">2017-04-21 10:48:59</column>
+            <column name="post_content"></column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">trash</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">31__trashed</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 12:50:31</column>
+            <column name="post_modified_gmt">2017-04-21 10:50:31</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=tplogoshowcase&amp;#038;p=31</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">tplogoshowcase</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">51</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:17:20</column>
+            <column name="post_date_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content"></column>
+            <column name="post_title">HTML5_Logo_512</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">html5_logo_512</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:17:20</column>
+            <column name="post_modified_gmt">2017-04-21 13:17:20</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/HTML5_Logo_512.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">33</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 12:51:39</column>
+            <column name="post_date_gmt">2017-04-21 10:51:39</column>
+            <column name="post_content"></column>
+            <column name="post_title">Bootstrap</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">technology</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 12:52:33</column>
+            <column name="post_modified_gmt">2017-04-21 10:52:33</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logo-carousel-free&amp;#038;p=33</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logo-carousel-free</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">35</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 12:53:23</column>
+            <column name="post_date_gmt">2017-04-21 10:53:23</column>
+            <column name="post_content"></column>
+            <column name="post_title">jq</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">jq</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 12:53:23</column>
+            <column name="post_modified_gmt">2017-04-21 10:53:23</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logo-carousel-free&amp;#038;p=35</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logo-carousel-free</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">49</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:14:49</column>
+            <column name="post_date_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content"></column>
+            <column name="post_title">Bez nazwy-1</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">bez-nazwy-1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:14:49</column>
+            <column name="post_modified_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/Bez-nazwy-1.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">39</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 13:13:42</column>
+            <column name="post_date_gmt">2017-04-21 11:13:42</column>
+            <column name="post_content"></column>
+            <column name="post_title">Logo</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">logo</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 13:13:42</column>
+            <column name="post_modified_gmt">2017-04-21 11:13:42</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=logo_slider&amp;#038;p=39</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">logo_slider</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">40</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 13:18:39</column>
+            <column name="post_date_gmt">2017-04-21 11:18:39</column>
+            <column name="post_content"></column>
+            <column name="post_title">bootstrap</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">bootstrap</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 13:18:39</column>
+            <column name="post_modified_gmt">2017-04-21 11:18:39</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=gs-logo-slider&amp;#038;p=40</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">gs-logo-slider</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">41</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 13:19:45</column>
+            <column name="post_date_gmt">2017-04-21 11:19:45</column>
+            <column name="post_content"></column>
+            <column name="post_title">jQuery</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">41</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 13:19:58</column>
+            <column name="post_modified_gmt">2017-04-21 11:19:58</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=gs-logo-slider&amp;#038;p=41</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">gs-logo-slider</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">43</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 13:25:41</column>
+            <column name="post_date_gmt">2017-04-21 11:25:41</column>
+            <column name="post_content"></column>
+            <column name="post_title">Bootstrap</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">bootstrap</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:17:45</column>
+            <column name="post_modified_gmt">2017-04-21 13:17:45</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=ed_logo&amp;#038;p=43</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">ed_logo</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">48</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:14:49</column>
+            <column name="post_date_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content"></column>
+            <column name="post_title">1280px-JQuery_logo.svg</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">1280px-jquery_logo-svg</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:14:49</column>
+            <column name="post_modified_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/1280px-JQuery_logo.svg_.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">47</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:14:49</column>
+            <column name="post_date_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content"></column>
+            <column name="post_title">2ba43291aa42c2e1e11e268e780a5e96_img</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2ba43291aa42c2e1e11e268e780a5e96_img</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:14:49</column>
+            <column name="post_modified_gmt">2017-04-21 13:14:49</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/2ba43291aa42c2e1e11e268e780a5e96_img.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">54</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:20:37</column>
+            <column name="post_date_gmt">2017-04-21 13:20:37</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam pi&amp;#241;a coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+
+...lub coś bardziej jak to:
+
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:20:37</column>
+            <column name="post_modified_gmt">2017-04-21 13:20:37</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/2-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">55</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:20:47</column>
+            <column name="post_date_gmt">2017-04-21 13:20:47</column>
+            <column name="post_content"></column>
+            <column name="post_title">Aplikacje</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">aplikacje</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 16:39:47</column>
+            <column name="post_modified_gmt">2017-04-21 14:39:47</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?page_id=55</column>
+            <column name="menu_order">3</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">56</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:20:47</column>
+            <column name="post_date_gmt">2017-04-21 13:20:47</column>
+            <column name="post_content"></column>
+            <column name="post_title">Aplikacje</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">55-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:20:47</column>
+            <column name="post_modified_gmt">2017-04-21 13:20:47</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">55</column>
+            <column name="guid">http://website.startmydesign.com/my/55-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">69</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 08:42:29</column>
+            <column name="post_date_gmt">2017-04-22 06:42:29</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam piña coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+...lub coś bardziej jak to:
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 08:42:29</column>
+            <column name="post_modified_gmt">2017-04-22 06:42:29</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/2-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">57</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:21:07</column>
+            <column name="post_date_gmt">2017-04-21 13:21:07</column>
+            <column name="post_content"></column>
+            <column name="post_title">Strona główna</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">strona-glowna</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:21:07</column>
+            <column name="post_modified_gmt">2017-04-21 13:21:07</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?page_id=57</column>
+            <column name="menu_order">1</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">58</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:21:07</column>
+            <column name="post_date_gmt">2017-04-21 13:21:07</column>
+            <column name="post_content"></column>
+            <column name="post_title">Strona główna</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">57-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:21:07</column>
+            <column name="post_modified_gmt">2017-04-21 13:21:07</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">57</column>
+            <column name="guid">http://website.startmydesign.com/my/57-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">59</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:21:18</column>
+            <column name="post_date_gmt">2017-04-21 13:21:18</column>
+            <column name="post_content"></column>
+            <column name="post_title">Kontakt</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">kontakt</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 16:39:52</column>
+            <column name="post_modified_gmt">2017-04-21 14:39:52</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?page_id=59</column>
+            <column name="menu_order">6</column>
+            <column name="post_type">page</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">60</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:21:18</column>
+            <column name="post_date_gmt">2017-04-21 13:21:18</column>
+            <column name="post_content"></column>
+            <column name="post_title">Kontakt</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">59-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:21:18</column>
+            <column name="post_modified_gmt">2017-04-21 13:21:18</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">59</column>
+            <column name="guid">http://website.startmydesign.com/my/59-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">61</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:22:05</column>
+            <column name="post_date_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content">{
+    &quot;nav_menu_item[5]&quot;: {
+        &quot;value&quot;: false,
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[6]&quot;: {
+        &quot;value&quot;: false,
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-2943105704206663700]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 57,
+            &quot;object&quot;: &quot;page&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 1,
+            &quot;type&quot;: &quot;post_type&quot;,
+            &quot;title&quot;: &quot;Strona g\u0142\u00f3wna&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my/strona-glowna/&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Strona g\u0142\u00f3wna&quot;,
+            &quot;nav_menu_term_id&quot;: 2,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;Strona&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-7835568593729468000]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 2,
+            &quot;object&quot;: &quot;page&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 2,
+            &quot;type&quot;: &quot;post_type&quot;,
+            &quot;title&quot;: &quot;Strony internetowe&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my/strony-internetowe/&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Strony internetowe&quot;,
+            &quot;nav_menu_term_id&quot;: 2,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;Strona&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-9013477936258447000]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 55,
+            &quot;object&quot;: &quot;page&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 3,
+            &quot;type&quot;: &quot;post_type&quot;,
+            &quot;title&quot;: &quot;Aplikacje&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my/aplikacje/&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Aplikacje&quot;,
+            &quot;nav_menu_term_id&quot;: 2,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;Strona&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    },
+    &quot;nav_menu_item[-8877690073992456000]&quot;: {
+        &quot;value&quot;: {
+            &quot;object_id&quot;: 59,
+            &quot;object&quot;: &quot;page&quot;,
+            &quot;menu_item_parent&quot;: 0,
+            &quot;position&quot;: 4,
+            &quot;type&quot;: &quot;post_type&quot;,
+            &quot;title&quot;: &quot;Kontakt&quot;,
+            &quot;url&quot;: &quot;http://website.startmydesign.com/my/kontakt/&quot;,
+            &quot;target&quot;: &quot;&quot;,
+            &quot;attr_title&quot;: &quot;&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;classes&quot;: &quot;&quot;,
+            &quot;xfn&quot;: &quot;&quot;,
+            &quot;status&quot;: &quot;publish&quot;,
+            &quot;original_title&quot;: &quot;Kontakt&quot;,
+            &quot;nav_menu_term_id&quot;: 2,
+            &quot;_invalid&quot;: false,
+            &quot;type_label&quot;: &quot;Strona&quot;
+        },
+        &quot;type&quot;: &quot;nav_menu_item&quot;,
+        &quot;user_id&quot;: 1
+    }
+}</column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">trash</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">5d079eba-7015-46ba-b85f-f04fe62b11ee</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:22:05</column>
+            <column name="post_modified_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/5d079eba-7015-46ba-b85f-f04fe62b11ee/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">customize_changeset</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">64</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:22:05</column>
+            <column name="post_date_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content"> </column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">64</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:22:05</column>
+            <column name="post_modified_gmt">2017-04-21 13:22:05</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/64/</column>
+            <column name="menu_order">3</column>
+            <column name="post_type">nav_menu_item</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">65</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-21 15:22:06</column>
+            <column name="post_date_gmt">2017-04-21 13:22:06</column>
+            <column name="post_content"> </column>
+            <column name="post_title"></column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">65</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-21 15:22:06</column>
+            <column name="post_modified_gmt">2017-04-21 13:22:06</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/65/</column>
+            <column name="menu_order">4</column>
+            <column name="post_type">nav_menu_item</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">66</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 08:33:44</column>
+            <column name="post_date_gmt">2017-04-22 06:33:44</column>
+            <column name="post_content"></column>
+            <column name="post_title">devices</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">devices</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 08:33:44</column>
+            <column name="post_modified_gmt">2017-04-22 06:33:44</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/devices.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">67</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 08:33:46</column>
+            <column name="post_date_gmt">2017-04-22 06:33:46</column>
+            <column name="post_content"></column>
+            <column name="post_title">website</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">website</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 08:33:46</column>
+            <column name="post_modified_gmt">2017-04-22 06:33:46</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/website.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">68</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 08:40:56</column>
+            <column name="post_date_gmt">2017-04-22 06:40:56</column>
+            <column name="post_content"></column>
+            <column name="post_title">website</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">publish</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">acf_website</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 13:18:11</column>
+            <column name="post_modified_gmt">2017-04-22 11:18:11</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=acf&amp;#038;p=68</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">acf</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">70</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 09:11:50</column>
+            <column name="post_date_gmt">2017-04-22 07:11:50</column>
+            <column name="post_content"></column>
+            <column name="post_title">iphone</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">open</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">iphone</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 09:11:50</column>
+            <column name="post_modified_gmt">2017-04-22 07:11:50</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/wp-content/uploads/2017/04/iphone.png</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">attachment</column>
+            <column name="post_mime_type">image/png</column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">71</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 09:11:53</column>
+            <column name="post_date_gmt">2017-04-22 07:11:53</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam piña coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+...lub coś bardziej jak to:
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 09:11:53</column>
+            <column name="post_modified_gmt">2017-04-22 07:11:53</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/2-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">73</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 09:35:47</column>
+            <column name="post_date_gmt">2017-04-22 07:35:47</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam piña coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+...lub coś bardziej jak to:
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 09:35:47</column>
+            <column name="post_modified_gmt">2017-04-22 07:35:47</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/2-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">74</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 12:08:31</column>
+            <column name="post_date_gmt">2017-04-22 10:08:31</column>
+            <column name="post_content"></column>
+            <column name="post_title">website</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">trash</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">website__trashed</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 12:10:43</column>
+            <column name="post_modified_gmt">2017-04-22 10:10:43</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">0</column>
+            <column name="guid">http://website.startmydesign.com/my/?post_type=ed_logo&amp;#038;p=74</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">ed_logo</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+        <table name="wp_posts">
+            <column name="ID">75</column>
+            <column name="post_author">1</column>
+            <column name="post_date">2017-04-22 14:08:08</column>
+            <column name="post_date_gmt">2017-04-22 12:08:08</column>
+            <column name="post_content">To jest przykładowa strona. Różni się ona od postu na blogu, ponieważ pozostanie ona ciągle w jednym miejscu i pokaże się w panelu nawigacyjnym na Twojej stronie (w przypadku większości szablonów). Większość osób zaczyna od strony 'O mnie' lub 'O nas', która przedstawia ich potencjalnym odwiedzającym stronę. Może to być coś takiego:
+&lt;blockquote&gt;Cześć! Jestem kurierem na rowerze za dnia, nocą aktorem amatorem, a to jest mój blog. Mieszkam w Gdańsku, mam wspaniałego psa o imieniu Azor i uwielbiam piña coladę. (Oraz to, kiedy łapie mnie deszcz.)&lt;/blockquote&gt;
+...lub coś bardziej jak to:
+&lt;blockquote&gt;Firma XYZ została założona w 1971 roku i od tamtej pory wytwarza najlepszej jakości wihajster na rynku. Zlokalizowana w Pacanowie zatrudnia ponad 2000 osób i jest powodem samego dobrodziejstwa dla lokalnej społeczności.&lt;/blockquote&gt;
+Jako nowy użytkownik WordPressa, możesz odwiedzić &lt;a href=&quot;http://website.startmydesign.com/my/wp-admin/&quot;&gt;swój panel administracyjny&lt;/a&gt;, aby skasować tę stronę i stworzyć nowe, dostosowane do Twoich potrzeb strony. Miłej zabawy!</column>
+            <column name="post_title">Strony internetowe</column>
+            <column name="post_excerpt"></column>
+            <column name="post_status">inherit</column>
+            <column name="comment_status">closed</column>
+            <column name="ping_status">closed</column>
+            <column name="post_password"></column>
+            <column name="post_name">2-revision-v1</column>
+            <column name="to_ping"></column>
+            <column name="pinged"></column>
+            <column name="post_modified">2017-04-22 14:08:08</column>
+            <column name="post_modified_gmt">2017-04-22 12:08:08</column>
+            <column name="post_content_filtered"></column>
+            <column name="post_parent">2</column>
+            <column name="guid">http://website.startmydesign.com/my/2-revision-v1/</column>
+            <column name="menu_order">0</column>
+            <column name="post_type">revision</column>
+            <column name="post_mime_type"></column>
+            <column name="comment_count">0</column>
+        </table>
+    </database>
+</pma_xml_export>

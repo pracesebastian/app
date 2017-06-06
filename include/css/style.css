@@ -1,0 +1,36 @@
+body {
+	background-color: #EBEBEB;
+}
+
+#home {
+	padding-top: 10%;
+}
+
+#home form {
+	width: 600px;
+	margin: auto;
+	padding: 2%;
+	border: 1px solid #000;
+	background-color: #333;
+}
+
+#home button {
+	padding: 5px 15px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #FFF;
+	margin-top: 10px;
+	margin-left: 43%;
+}
+
+#home .input-style {
+	padding: 8px 10px;
+	border: 0;
+	margin: 5px 0;
+}
+
+#home .err {
+	color: #5b0617;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
